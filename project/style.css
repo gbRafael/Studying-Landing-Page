@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root{
@@ -20,3 +21,165 @@ html, body{
     color: #fff;
     overflow: hidden;
 }
+
+ul li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    z-index: 55;
+}
+
+.first{
+    background-color: var(--primary-color);
+}
+
+.second{
+    background-color: white;
+    left: 33.3%
+}
+
+.third{
+    background-color: var(--secondary-color);
+    left: 66.6%;
+}
+
+.left_container, .right_container{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    z-index: -50;
+}
+
+.left_container{
+    background: var(--primary-color);
+}
+
+.right_container{
+    left: 50%;
+    background-color: var(--secondary-color);
+}
+
+.left_strip, .right_strip{
+    position: absolute;
+    width: 1px;
+    height: 100vh;
+    background: #fff;
+    opacity: .5;
+    z-index: -10;
+}
+
+.left_strip{
+    left: 120px;
+}
+
+.right_strip{
+    right: 120px;
+}
+
+.body_layout{
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.nav{
+    height:  5rem;
+    display: flex;
+    align-items: center;
+    justify-content:  space-between;
+}
+
+.nav_insider{
+    width: 75%;
+    display: flex;
+    align-items: center;
+}
+
+.nav__icon{
+    font-size: 1.5rem;
+    color: var(--color-text);
+    text-transform: capitalize;
+}
+
+.nav__menu{
+    margin-left: 3rem;
+}
+
+.nav__item{
+    margin-bottom: 2rem;
+}
+
+.nav__link{
+    color: var(--color-text);
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+.nav__link:hover{
+    border-bottom: 1px solid var(--color-text);
+}
+
+.search_btn,.cart_btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: var(--color-text);
+}
+
+.search_btn{
+    margin-right: 88px;
+}
+
+.search_btn i, .cart_btn{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.cart_btn i{
+    color: var(--secondary-color);
+}
+
+.social{
+    position: absolute;
+    left: -3%;
+    top: 50%;
+    transform: rotate(-90deg);
+}
+
+.social ul{
+    list-style: none;
+}
+
+.social ul li{
+    display: inline-block;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+}
+
