@@ -322,7 +322,7 @@ header{
     background-color: var(--color-text);
 }
 
-@media  screen and (max-widht:768px) {
+@media  screen and (max-width:768px) {
     .logo{
         margin-left: 0.5rem;
     }
